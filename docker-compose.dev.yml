@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  nextjs-app-dev:
+    container_name: nextjs-app-dev
+    image: nextjs-app-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000
+    environment:
+      - WATCHPACK_POLLING=true
