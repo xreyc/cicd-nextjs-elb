@@ -19,8 +19,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: cicd-nextjs-elb
-        environment_name: Cicdnextjselb-env
+        application_name: nextjs-application
+        environment_name: Nextjsapplication-env
         version_label: ${{ github.sha }}
         region: ap-southeast-1
         deployment_package: deploy.zip
